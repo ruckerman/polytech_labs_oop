@@ -1,0 +1,9 @@
+float newfunt, funt, shilling, pens;
+	cout << "—тарые фунты в новые\n¬ведите колличество фунтов: ";
+	cin >> funt;
+	cout << "\n¬ведите колличество стерлингов: ";
+	cin >> shilling;
+	cout << "\n¬ведите колличество пенсов: ";
+	cin >> pens;
+	newfunt = funt + ((shilling * 12 + pens) / 240);
+	cout << "Ёквивалент в новых фунтах = " << newfunt << " " << char(156) << endl;

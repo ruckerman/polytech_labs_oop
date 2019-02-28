@@ -1,0 +1,6 @@
+int var = 10;
+
+	cout << "3.Изменение числа 10\n"<< var << endl;
+	var *= 2;
+	cout << var-- << endl;
+	cout << var << endl;

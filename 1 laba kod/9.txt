@@ -1,0 +1,5 @@
+int a, b, c, d;
+
+	cout << "Перевод дроби \nEnter a b c d: ";
+	cin >> a >> b >> c >> d;
+	printf_s("%d/%d+%d/%d=(%d*%d+%d*%d)/(%d*%d)", a, b, c, d, a, d, b, c, b, d);

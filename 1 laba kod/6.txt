@@ -1,0 +1,9 @@
+	float dollar, sterling, frank, mark, yen;
+
+	cout << "ѕеревод долларов в другие валюты\n¬ведите колличество USD: ";
+	cin >> dollar;
+	sterling = dollar * 1.487;
+	frank = dollar * 0.172;
+	mark = dollar * 0.584;
+	yen = dollar * 0.0095;
+	cout << "\nGBP = " << sterling << "\nFRF = " << frank << "\nDEM = " << mark << "\nJPY = " << yen << endl;

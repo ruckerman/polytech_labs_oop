@@ -1,0 +1,8 @@
+float   decpounds, pounds, shilling, penny, decfrac;
+	cout << "\nEnter value of funts: "; cin >> decpounds;
+	pounds = static_cast<int>(decpounds);
+	decfrac = decpounds - pounds;
+	shilling = decfrac * 20;
+	penny = static_cast<int>(shilling);
+	decfrac = static_cast<int>((shilling - penny) * 10);
+	cout << "Equivalent in old funts = " << pounds << "." << penny << "." << decfrac << endl;

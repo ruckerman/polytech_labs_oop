@@ -1,0 +1,1 @@
+cout << "Табулция \nMoscow" << setfill('.') << setw(14) << "8425785" << endl;

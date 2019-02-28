@@ -1,0 +1,4 @@
+char a;
+	cout << "Заглавная буква\nВведите символ: ";
+	cin >> a;
+	cout << islower(a) << endl;
