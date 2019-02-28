@@ -123,7 +123,7 @@ int main()
 		char kod[2];
 		int intkod;
 		cin >> kod;
-		if ((((int)kod[0] - 48 >= 1) & ((int)kod[0] - 48 <= 9)))
+		if ( ( (int)kod[0] - 48 >= 1 & (int)kod[0] - 48 <= 9 & kod[1] == 0 ) || ( (int)kod[0] - 48 == 1 & (int)kod[1] - 48 >= 0 & (int)kod[1] - 48 <= 2 ) )
 		{
 			if (((int)kod[1] - 48 >= 0) & ((int)kod[1] - 48 < 3) & ((int)kod[0] - 48 == 1))
 			{
