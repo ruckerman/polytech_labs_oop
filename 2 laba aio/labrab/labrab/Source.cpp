@@ -1,28 +1,104 @@
 #include <iostream>
 #include <iomanip>
 #include <stdio.h>
+#include <conio.h>
 
 using namespace std;
 
 
 void lab1() {
-	
+	int a;
+	cout << "Введите число ";
+	cin >> a;
+	int koef = 1;
+	for (int i = 1; i < 21; i++)
+	{
+		for (int j = 1; j < 11; j++)
+		{
+			cout << setiosflags(ios::left) << setw(7) << a * koef; 
+			koef += 1;
+		}
+		cout << endl;
+	}
 }
 
 void lab2() {
-	
+	float cel, far;
+	int kod;
+	cout << "Нажмите 1 для перевода шкалы Цельсия в шкалу Фаренгейта.\n2 для перевода шкалы Фаренгейта в шкалу Цельсия: ";
+	cin >> kod;
+	switch (kod)
+	{
+	    case 1:
+		{
+			cout << "Введите значение по Цельсию: "; cin >> cel;
+			far = cel * 1.8 + 32;
+			cout << "Значение по Фаренгейту: " << far << endl;
+			break;
+		}
+		case 2:
+		{
+			cout << "Введите значение по Фаренгейту: "; cin >> far;
+			cel = (far - 32.0) * (5.0 / 9.0);
+			cout << "Значение по Цельсию: " << cel << endl;
+			break;
+		}
+	    default:
+	    {
+	    	cout << "Неправильный код\n";
+	    	break;
+	    }
+	}
 }
 
+//исправить 3 задание
 void lab3() {
+	/*char ch;
+	unsigned long total = 0;          //this holds the number
+
+	cout << "\nEnter a number: ";
+	while ((ch = getche()) != '\r')    //quit on Enter
+		total = total * 10 + ch - '0';     //add digit to total*10
+	cout << "\nNumber is: " << total << endl;*/
 
 }
 
 void lab4() {
-	
+	double n1, n2, ans;
+	char oper, ch;
+
+	do {
+		cout << "\nEnter first number, operator, second number: ";
+		cin >> n1 >> oper >> n2;
+		switch (oper)
+		{
+		case '+': { ans = n1 + n2;  break;
+		}
+		case '-': { ans = n1 - n2;  break;
+		}
+		case '*': { ans = n1 * n2;  break;
+    	}
+		case '/': { ans = n1 / n2;  break;
+        }
+		default: { ans = 0; }
+		}
+		cout << "Answer = " << ans;
+		cout << "\nDo another (Enter 'y' or 'n')? ";
+		cin >> ch;
+	} while (ch != 'n');
+
 }
 
 void lab5() {
-	
+	for (int i = 0; i < 20; i++) 
+	{
+		cout <<  setw(20 - i)<< setfill(' ');
+		for (int j = 0; j <= i; j++)
+		{
+			cout << "X";
+		}
+		cout << endl;
+	}
 }
 
 void lab6() {
@@ -57,10 +133,10 @@ int main()
 {
 	setlocale(LC_ALL, "RUS");
 
-	cout << "Список программ:\n1.Перевод из галлонов в кубические фунты\n2.Вывод заданной таблицы"
-		"\n3.Изменение числа 10\n4.Стихотворение \n5.Заглавная буква \n6.Перевод долларов в другие валюты"
-		"\n7.Перевод температуры \n8.Табулция \n9.Перевод дроби \n10.Старые фунты в новые\n11.Левосторонее форматирование"
-		"\n12.Новые фунты в старые\n";//текст меню
+	cout << "Список программ:\n1.Таблица умножения на заданное число \n2.Перевод температуры"
+		"\n3. \n4. \n5. \n6."
+		"\n7. \n8. \n9. \n10. \n11. "
+		"\n12. \n";//текст меню
 	int a = 1;// флаг меню
 	// меню организовано циклом while
 	while (a == 1)
