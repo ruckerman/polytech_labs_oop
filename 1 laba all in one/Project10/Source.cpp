@@ -97,6 +97,7 @@ void lab11(){
 		<< setiosflags(ios::left) << setw(12) << "Иванов" << setw(12) << "Сергей" << setw(14) << "Осиновая 3" << setw(14) << "Находка" << endl
 		<< setiosflags(ios::left) << setw(12) << "Сидоров" << setw(12) << "Иван" << setw(14) << "Березовая 21" << setw(14) << "Калининград" << endl;
 }
+
 void lab12(){
 	float   decpounds, pounds, shilling, penny, decfrac;
 	cout << "\nEnter value of funts: "; cin >> decpounds;
